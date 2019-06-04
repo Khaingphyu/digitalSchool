@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@media only screen and (max-width:640px) {
+	.pc{
+    	display: none;
+  	}
+	.sp {
+		display: block;
+	}
+	img {
+		max-width: 100%;
+	}
+  /* --------------------------------------------- toggle --------------------------------*/
+	.sp_gnav {
+	    position: relative;
+	}
+
+	.menu {
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+		top: 15px;
+		right: 15px;
+		z-index: 1;
+	}
+
+  .menu .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 35px;
+    height: 4px;
+    background: #ef8426;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .menu .line_01 {
+    top: 8px;
+  }
+
+  .menu .line_02 {
+    top: 18px;
+  }
+
+  .menu .line_03 {
+    top: 27px;
+  }
+
+  .menu.is-active .line_01 {
+    top: 17px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .menu.is-active .line_02 {
+    opacity: 0;
+  }
+
+  .menu.is-active .line_03 {
+    top: 17px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  .sp-navigation {
+    display: none;
+    background: rgba(0, 0, 0, .9);
+    float: none;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .sp-navigation li {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .sp-navigation li a {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #f6811f;
+    color: #f6811f;
+  }
+
+  .sp-navigation li a::after {
+    display: none;
+  }
+ 	.headerIn {
+ 		max-width: 100%;
+ 		padding: 10px 0;
+ 	}
+ 	.headerLft  {
+ 		margin-left: 15px;
+ 	}
+	.inner {
+		width: 96%;
+    max-width: 100%;
+	}
+  .footerIn {
+    max-width: 100%;
+  }
+  .footerLft {
+    float: none;
+    text-align: center;
+  }
+  .footerRht {
+    float: none;
+    width: 215px;
+    margin: 10px auto;
+  }
+  .map {
+    width: 94%;
+  }
+  #pageTop {
+    right: 30px;
+  }
+  /* ----------------------- service ---------------------- */
+  .serviceLft {
+    float: none;
+    width: 100%;
+    margin-right: 0%;
+  }
+  .serviceRht {
+    float: none;
+    width: 100%;
+  }
+  /* ----------------------- about us ---------------------- */
+  .aboutClient li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* ----------------------- article ---------------------- */
+  .articleBox li,
+  .galleryBox li {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  /* ----------------------- contact ---------------------- */
+  .row01 {
+    float: none;
+  }
+  .row02 {
+    float: none;
+  }
+  .contactTbl tr,
+  .contactTbl tr td {
+    display: block;
+  }
+  .contactTbl tr input[type=text] {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .textarea textarea {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+
+}
